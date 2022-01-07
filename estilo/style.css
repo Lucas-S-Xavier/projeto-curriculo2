@@ -188,12 +188,15 @@ a {
         padding-top: 0px;
     }
 
+
     .ul-experiencia {
         margin: 20px 0;
+        padding-left: 0;
     }
 
     .ul-estagio {
         margin: 20px 0;
+        padding-left: 0;
     }
 
     div.right-side h2, .p-negrito , p.data-diff , a {

@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    margin: 50px 0;
+    background-image: url('../imagem/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    max-width: 500px;
+}
+
+main {
+    width: fit-content;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+div.nome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    padding: 20px 100px;
+    text-transform: uppercase;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+    15deg, #65ec9b, #4597e9);
+    font-size: 2.5em;
+}
+
+.subtitulo-header {
+    padding: 20px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.imagem {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid lightgray;
+}
+
+div.siders {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+div.left-side {
+    padding: 0px 40px;
+}
+
+div.right-side {
+    padding: 0 40px;
+}
+
+div.middle {
+    border-left: 5px solid;
+    min-height: 80%;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+    15deg, #65ec9b,#4597e9);
+    text-align: center;
+    margin: 0px 0 20px 0; 
+}
+
+
+h2 {
+    padding: 10px 0;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.p-introduçao {
+    text-align: justify;
+    color: rgb(153, 153, 153);
+    padding: 0px 0px 15px 0px;
+    line-height: 1.3em;
+    font-size: 20px; 
+}
+
+.p-negrito {
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+p.data {
+    color: rgb(153, 153, 153);
+    text-align: right;
+    padding: 10px 0px 20px 0px;
+}
+
+.ul-experiencia {
+    list-style-position: inside;
+    padding: 10px 0px 20px 70px;
+    font-size: 18px;
+    line-height: 1.4em;
+    list-style-type: circle;
+}
+
+.ul-estagio {
+    list-style-position: inside;
+    padding: 10px 0px 20px 70px;
+    font-size: 18px;
+    line-height: 1.4em;
+    list-style-type: circle;
+}
+
+.titulo-r {
+    text-align: left;
+}
+
+.titulo-meio {
+    padding-top: 25px;
+}
+
+.ul-habilidades {
+    list-style-position: inside;
+    padding: 10px 0;
+    font-size: 18px;
+    list-style-type: circle;
+    line-height: 1.5em;
+}
+
+.data-diff {
+    color: rgb(153, 153, 153);
+    padding: 10px 0 20px 0;
+}
+
+a {
+    color: blue;
+}
+
+.vai {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 758px) {
+
+    main {
+        width: 95%;
+    }
+
+    div.siders {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.middle {
+        border-top: 5px solid;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    div.left-side  h2 , p , p.data , .p-negrito {
+        text-align: center;
+    }
+
+    p.data { 
+        padding-top: 0px;
+    }
+
+    .ul-experiencia {
+        margin: 20px 0;
+    }
+
+    .ul-estagio {
+        margin: 20px 0;
+    }
+
+    div.right-side h2, .p-negrito , p.data-diff , a {
+        text-align: left;
+    }
+
+    .link {
+        text-align: left;
+        padding-bottom: 50px;
+    }
+    
+}

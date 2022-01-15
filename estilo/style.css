@@ -13,6 +13,7 @@ body {
     background-image: url('../imagem/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 1s;
 }
 
 p {
@@ -25,6 +26,7 @@ main {
     background-color: white;
     display: flex;
     flex-direction: column;
+    transition: 1s;
 }
 
 div.nome {
@@ -44,6 +46,7 @@ h1 {
     border-image-source: linear-gradient(
     15deg, #65ec9b, #4597e9);
     font-size: 2.5em;
+    transition: 1s;
 }
 
 .subtitulo-header {
@@ -57,6 +60,7 @@ h1 {
     width: 150px;
     border-radius: 50%;
     border: 5px solid lightgray;
+    transition: 1s;
 }
 
 div.siders {
@@ -81,6 +85,7 @@ div.middle {
     15deg, #65ec9b,#4597e9);
     text-align: center;
     margin: 0px 0 20px 0; 
+    transition: 1s;
 }
 
 
@@ -152,6 +157,7 @@ a {
     color: blue;
 }
 
+
 .vai {
     margin-bottom: 20px;
 }
@@ -159,6 +165,7 @@ a {
 @media screen and (max-width: 1200px) {
     main {
         width: 95%;
+        transition: 1s;
     }
 }
 
@@ -168,9 +175,14 @@ a {
         width: 95%;
     }
 
+    main h1 {
+        padding: 20px 40px;
+    }
+
     div.siders {
         display: flex;
         flex-direction: column;
+        transition: 1s;
     }
 
     div.middle {
